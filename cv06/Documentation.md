@@ -51,10 +51,10 @@ Privátní metoda, která provede operaci nad všemi prvky matice se skalární 
 Privátní metoda, která zajišťuje podobnou funkcionalitu jako předchozí funkce. Tuto metodu volají všechny veřejné operátory + - * /. Předají levý a pravý operand a lambda funkci, která zajišťuje + - * /.  
 Nejdříve se v metodě rozhodne, zda není jeden z operandů skalár, potom odkáže na ``scalarOperation()`` a vrátí výsledek.
 Pokud žádný z operandů není skalár, zkontroluje se velikost obou matic, pokud nejsou shodné **throws** *"Dimensions mismatch!"*
-Poté se provede oprace mezi prvky matice + - * /. *
-(Jde o operaci mezi prvkami matice, násobení a dělení mezi maticemi správně probíhá jinak, ale to jsem neimplementoval)*
+Poté se provede oprace mezi prvky matice + - * /. 
+*(Jde o operaci mezi prvkami matice, násobení a dělení mezi maticemi správně probíhá jinak, ale to jsem neimplementoval)*
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Nzg3NjcxNl19
+eyJoaXN0b3J5IjpbLTY1MDQyMzk0NF19
 -->
