@@ -1,7 +1,7 @@
 ## Cvičení 4
 
  **Zadání**:
-Udělat objekt Pole, který má:
+Udělat objekt **Pole**, který má:
 - jednorozměrné pole, typ int
 - konstruktor 1 parametr = velikost
 - konstruktor 2 par - velikost, hodnota všech prvků
@@ -35,7 +35,7 @@ Konstruktory a destruktory jsou docela intuitivní.
 - ``fillRand() `` naplní pole náhodnými hodnotami od 0 do 100.
 - ``print()`` vypíše na konzoli cyklem cout<<pole[i]
 - ``add(Pole &second)`` přičte k poli, u kterého se funkce volá hodnoty prvků druhého pole. Pokud nejsou velikosti polí stejné **throws** "Size mismatch!".
-- ``friend add(Pole& A, Pole& B, Pole& C)`` - pokud nejsou A a B a C stejně velké **throws** "Size mismatch!". Jinak do pole C zapíše součet prvků A+B.
+- ``friend add(Pole& A, Pole& B, Pole& C)`` - pokud nejsou **A**, **B** a **C** stejně velké **throws** "Size mismatch!". Jinak do pole **C** zapíše součet prvků **A+B**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzMxMDQ1NjBdfQ==
+eyJoaXN0b3J5IjpbOTQzNDU5MTcxXX0=
 -->
