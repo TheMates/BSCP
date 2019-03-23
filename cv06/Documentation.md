@@ -47,7 +47,7 @@ Konstruktory a destruktory jsou docela intuitivní. Defaultní konstruktor ``Mat
 - **``void scalarOperation(double scalar, double(* operation)(double, double))``**
 Privátní metoda, která provede operaci nad všemi prvky matice se skalární hodnotou, která je poslaná parametrem. Operace je zadaná lambda funkcí, jako druh parametr funkce (operace + - * /).
 
--**``static Matice& matrixOperation(const Matice& loperand, const Matice& roperand, double(* operation)(double, double))``**
+- **``static Matice& matrixOperation(const Matice& loperand, const Matice& roperand, double(* operation)(double, double))``**
 Privátní metoda, která zajišťuje podobnou funkcionalitu jako předchozí funkce. Tuto metodu volají všechny veřejné operátory + - * /. Předají levý a pravý operand a lambda funkci, která zajišťuje + - * /.  
 Nejdříve se v metodě rozhodne, zda není jeden z operandů skalár, potom odkáže na ``scalarOperation()`` a vrátí výsledek.
 Pokud žádný z operandů není skalár, zkontroluje se velikost obou matic, pokud nejsou shodné **throws** *"Dimensions mismatch!"*
@@ -56,5 +56,5 @@ Poté se provede oprace mezi prvky matice + - * /. *
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTA2MDU0MTJdfQ==
+eyJoaXN0b3J5IjpbLTU2Nzg3NjcxNl19
 -->
