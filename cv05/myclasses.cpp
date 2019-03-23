@@ -83,6 +83,11 @@ float Obdelnik::obsah()
 	return _dimensions[0] * _dimensions[1];
 }
 
+Barevny_obdelnik::Barevny_obdelnik(float a, float b, std::string barva) :Obdelnik(a, b)
+{
+	_barva = barva;
+}
+
 void Barevny_obdelnik::print()
 {
 	cout << "Barevny obdelnik" << printPrivate() << " barva: " << _barva<<endl;

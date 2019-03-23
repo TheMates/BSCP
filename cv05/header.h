@@ -58,10 +58,7 @@ class Trojuhelnik : public Tvar
  private:
 	 std::string _barva;
  public:
-	Barevny_obdelnik(float a, float b, std::string barva) :Obdelnik(a, b)
-	{
-		_barva = barva;
-	};
+	 Barevny_obdelnik(float a, float b, std::string barva);
 	void print() override;
  };
 
