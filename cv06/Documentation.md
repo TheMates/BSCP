@@ -12,9 +12,8 @@ Vytvořit objekt **Matice**, který má:
 	- [] pro čtení i zápis
 	- << pro výpis na konzoli
 
- C
  
- **Soubory:**
+#### Soubory
  **``cv06.cpp ``**
  Obsahuje main funkci, demonstrace práce s objekty. 
 
@@ -57,5 +56,5 @@ Poté se provede oprace mezi prvky matice + - * /. *
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAxNjU5MzhdfQ==
+eyJoaXN0b3J5IjpbLTkzMDY0OTc3N119
 -->
