@@ -13,7 +13,7 @@ Vytvořit objekt **Matice**, který má:
 	- << pro výpis na konzoli
 
  
-#### Soubory
+### Soubory
  **``cv06.cpp ``**
  Obsahuje main funkci, demonstrace práce s objekty. 
 
@@ -56,5 +56,5 @@ Poté se provede oprace mezi prvky matice + - * /. *
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDY0OTc3N119
+eyJoaXN0b3J5IjpbLTE0NTA2MDU0MTJdfQ==
 -->
