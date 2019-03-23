@@ -15,7 +15,7 @@ Udělat objekt **Pole**, který má:
 Dále:
 - friend sčítání 2 polí - 3 par, A, B, výsledek C
  
- **Soubory:**
+#### Soubory
  **``maincv04.cpp ``**
  Obsahuje main funkci, demonstrace konstruktorů a práce s objekty. Dynamická i statická inicializace.
 
@@ -37,5 +37,5 @@ Konstruktory a destruktory jsou docela intuitivní.
 - ``add(Pole &second)`` přičte k poli, u kterého se funkce volá hodnoty prvků druhého pole. Pokud nejsou velikosti polí stejné **throws** *"Size mismatch!"*.
 - ``friend add(Pole& A, Pole& B, Pole& C)`` - pokud nejsou **A**, **B** a **C** stejně velké **throws** "Size mismatch!". Jinak do pole **C** zapíše součet prvků **A+B**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjQ4MTk0OV19
+eyJoaXN0b3J5IjpbLTExNjI5MjY1N119
 -->
