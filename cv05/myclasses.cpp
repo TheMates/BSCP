@@ -10,28 +10,9 @@ std::string Tvar::printPrivate()
 }
 
 
-Tvar::Tvar(float radius)
+Tvar::Tvar(int size) :_size(size)
 {
-	_size = 1;
-	_dimensions = new float[1];
-	_dimensions[0] = radius;
-}
-
-Tvar::Tvar(float a, float b)
-{
-	_size = 2;
-	_dimensions = new float[2];
-	_dimensions[0] = a;
-	_dimensions[1] = b;
-}
-
-Tvar::Tvar(float a, float b, float c)
-{
-	_size = 3;
-	_dimensions = new float[3];
-	_dimensions[0] = a;
-	_dimensions[1] = b;
-	_dimensions[2] = c;
+	_dimensions = new float[size];
 }
 
 Tvar::~Tvar()
@@ -39,6 +20,11 @@ Tvar::~Tvar()
 	delete _dimensions;
 }
 
+
+Kruh::Kruh(float radius) :Tvar(1)
+{
+	_dimensions[0] = radius;
+}
 
 void Kruh::print()
 {
@@ -51,6 +37,13 @@ float Kruh::obvod()
 float Kruh::obsah()
 {
 	return pi * _dimensions[0] * _dimensions[0];
+}
+
+Trojuhelnik::Trojuhelnik(float a, float b, float c) :Tvar(3)
+{
+	_dimensions[0] = a;
+	_dimensions[1] = b;
+	_dimensions[2] = c;
 }
 
 void Trojuhelnik::print()
@@ -67,6 +60,12 @@ float Trojuhelnik::obsah()
 {
 	float s = (_dimensions[0] + _dimensions[1] + _dimensions[2]) / 2.0;
 	return sqrt(s*(s - _dimensions[0])*(s - _dimensions[1])*(s - _dimensions[2]));
+}
+
+Obdelnik::Obdelnik(float a, float b) :Tvar(2)
+{
+	_dimensions[0] = a;
+	_dimensions[1] = b;
 }
 
 void Obdelnik::print()

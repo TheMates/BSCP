@@ -7,15 +7,13 @@ class Tvar
 {
  protected:
 	 float *_dimensions;
-	 char _size;
+	 int _size;
 	 std::string printPrivate();
 	 friend void swap(Tvar& a, Tvar& b);
 	
 
  public:
-	 Tvar(float radius);
-	 Tvar(float a, float b);
-	 Tvar(float a, float b, float c);
+	 Tvar(int size);
 	 ~Tvar();
 
 	 virtual void print() = 0;
@@ -28,7 +26,7 @@ class Tvar
 class Kruh: public Tvar
  {
  public:
-	 Kruh(float a) : Tvar(a) {};
+	 Kruh(float radius);
 	 void print() override;
 	 float obvod() override;
 	 float obsah() override;
@@ -40,7 +38,7 @@ class Kruh: public Tvar
 class Trojuhelnik : public Tvar
  {
  public: 
- 	Trojuhelnik(float a, float b, float c) :Tvar(a, b, c) {};
+	 Trojuhelnik(float a, float b, float c);
 	 void print() override;
 	 float obvod() override;
 	 float obsah() override;
@@ -49,7 +47,7 @@ class Trojuhelnik : public Tvar
  class Obdelnik :public Tvar
  {
  public: 
- 	Obdelnik(float a, float b) :Tvar(a, b) {};
+	 Obdelnik(float a, float b);
 	 void print() override;
 	 float obvod() override;
 	 float obsah() override;
