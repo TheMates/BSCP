@@ -15,7 +15,7 @@ Vytvořit odvozené třídy **Kruh, Trojuhelnik, Obdelnik, Barevny_Obdelnik**
 Dále:
 - funkci pro řazení objektů podle obvodu nebo obsahu
  
-#### Soubory
+### Soubory
  **``cv05.cpp ``**
  Obsahuje main funkci. Vytvoří se ukazatel na pole ``Tvar[10]`` a pak se naplní různými tvary. Je ukázána funkcionalita funkce pro tisk.
  Potom se volá nad polem funkce pro řazení a seřazené objekty se vypíší znovu.
@@ -47,5 +47,5 @@ Přijímá stejné parametry jako výše zmíněná funkce, navíc s **``startId
 
 - **``void swap(Tvar& a, Tvar& b)``**  protože ``std::swap()`` není definovaná pro třídu Tvar tak je implementována tak, že jednoduše prohodí nejdřív vnitřní pole rozměrů a pak parametr ``_size``pomocí funkce ``std::swap()``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjAyMzkzMF19
+eyJoaXN0b3J5IjpbNDM0NTk1NDc5XX0=
 -->
